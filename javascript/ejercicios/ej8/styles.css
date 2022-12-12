@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(213, 211, 211);
+    border-bottom: 5px double gray;
+}
+nav {
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav > ul > li {
+    padding: 1vh 2vw;
+    transition: 0.3s;
+}
+nav > ul > li:hover {
+    background-color: gray;
+    transition: 0.3s;
+}
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    gap: 3vh;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 235, 235);
+    width: 600px;
+    min-height: 120px;
+    border: 4px double rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128);
+}
+figcaption{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+}
+.dotted {
+    border-bottom: 1px dashed gray;
+    text-decoration: none;
+}
+.p-left {
+    padding-left: 40px;
+}
+.a-center {
+    align-items: center;
+}
+button {
+    height: 40px;
+    min-width: 150px;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background-color: rgb(204, 204, 204);
+    transition: 0.3s;
+}
+button:hover {
+    font-size: larger;
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+#parrafos{
+    min-height: 150px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 2vh 2vw;
+}
+#parrafos section {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+#exercises {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}

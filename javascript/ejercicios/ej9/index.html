@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    
+    <div class="outlined">
+        <p class="float-over">Datos personales</p>
+        <form id="cv-form" name="cv" action="" method="post">
+            <section>
+                <label for="provincia">Provincia</label> 
+                <div>
+                    <select name="provincia" id="provincia">
+                        <option value="0">- selecciona -</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="barcelona">Barcelona</option>
+                    </select> 
+                </div>
+            </section>
+            <section>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <div>
+                    <input name="dia-nacimiento" type="number" min="1" max="31"><span> de </span>
+                    <select name="meses" id="meses">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select> <span> de </span>
+                    <input name="ano-nacimiento" type="number" min="1900" max="2023">
+                </div>
+            </section>
+            <section>
+                <label for="interes">Temas de interés</label>
+                <div>
+                    <select name="interes" id="interes" multiple>
+                        <option value="1">Administración de bases de datos</option>
+                        <option value="2">Análisis y programación</option>
+                        <option value="3">Arquitectura</option>
+                        <option value="4">Calidad</option>
+                        <option value="5">ERP, CRM, Business Intelligence</option>
+                        <option value="6">Agricultura y ganadería</option>
+                        <option value="7">Música e instrumentos musicales</option>
+                        <option value="8">Otra cosa</option>
+                        <option value="9">No está en la lista</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <button type="submit">Enviar</button>
+            </section>
+        </form>
+    </div>
+    <div>
+        <h1>Información sobre el producto</h1><br>
+        <div class="outlined">
+            <form name="product" action="" method="post" onsubmit="return validateProductForm(event); event.preventDefault()">
+                <p class="float-over">Datos Básicos</p>
+                <section>
+                    <div>
+                        <label for="name">Nombre</label><br>
+                        <input type="text" name="name"><br>
+                    </div>
+                </section>
+                <section><div>
+                    <label for="description">Descripción</label><br>
+                    <textarea name="description" id="description" cols="60" rows="5"></textarea><br><br>
+                </div></section>
+                <section><div>
+                    <label for="image">Foto</label>
+                    <input type="file"><br><br>
+                </div></section>
+                <section><div>
+                    <input type="checkbox" id="visitors-counter" name="visitors-counter">
+                    <label for="visitors-counter">Añadir contador de visitas</label>
+                </div></section>
+                <section>
+                    <div>
+                        <label for="price">Precio</label>
+                        <input name="price" type="text" size="7"><span> €</span>
+                    </div>
+                    <div>
+                        <label for="taxes">Impuestos</label>
+                        <select name="taxes" id="taxes">
+                            <option value="4">4%</option>
+                            <option value="7">7%</option>
+                            <option value="16">16%</option>
+                            <option value="25">25%</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="discount">Promoción</label><br>
+                        <input type="radio" name="discount" value="0"> Ninguno</input><br>
+                        <input type="radio" name="discount" value="trgratis"> Transporte gratuito</input><br>
+                        <input type="radio" name="discount" value="desc5"></input> Descuento 5%<br>
+                    </div>
+                </section>
+                <button type="submit">Enviar</button>
+            </form>
+    
+        </div>
+    
+    </div>
+
+</body>
+
+</html>

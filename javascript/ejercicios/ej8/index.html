@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 javaScript</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.google.com.ar">Ir a google</a>
+            </li>
+            <li>
+                <a href="#abajo" id="arriba">ir abajo</a </li>
+            <li>
+                <a href="https://avatars.githubusercontent.com/u/56456756?s=96&v=4">Enlace a imagen</a>
+            </li>
+            <li>
+                <a href="./secpage.html">Ir a la segunda página</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Ejercicio 8</h1>
+        <div id="exercises">
+            <button onclick="numberOfLinks()">Comprobar número de enlaces</button>
+            <button onclick="numberOfParragraph()">Comprobar número de párrafos</button>
+            <button onclick="findLastLink()">Comprobar el último enlace</button>
+        </div>
+        <div id="parrafos">
+            <section>
+                <h3>Tus frases</h3>
+                <button onclick="addParragraph()">Añadir</button>
+            </section>
+        </div>
+        <h2>El Ártico ha perdido el 14% de su hielo
+            marino perenne en un solo año</h2>
+        <p><b>WASHINGTON.-</b> El hielo perenne del Ártico se
+            redujo en un 14% entre 2004 y 2005, al perder
+            <b>720.000 kilómetros cuadrados</b>, una superficie superior
+            a la Península Ibérica, según datos de la <span class="dotted">NASA</span>.
+        </p>
+        <p>Según el <span class="dotted">JPL</span>, la pérdida del hielo perenne,
+            que debiera mantenerse durante todo el verano, fue todavía
+            mayor y se acercó a un 50% en el momento en que ese
+            hielo se desplazaba desde el Ártico oriental hacia el oeste.</p>
+
+            <p><b>Son Nghiem</b>, investigador del <span class="dotted">JPL</span> ha declarado que:</p>
+
+        <div class="p-left">
+            <cite>
+                "Los cambios registrados en esos años en el hielo ártico son
+                rápidos y espectaculares. De mantenerse la situación, ésta tendrá
+                un impacto "profundo en el ambiente, así como en el transporte
+                marino y el comercio."
+            </cite>
+        </div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, error! Commodi eos eius fugiat quia neque,
+            repellendus atque, veniam placeat numquam molestias a dolor sapiente vitae culpa distinctio. A, recusandae.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, error! Commodi eos eius fugiat quia neque,
+            repellendus atque, veniam placeat numquam molestias a dolor sapiente vitae culpa distinctio. A, recusandae.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, error! Commodi eos eius fugiat quia neque,
+            repellendus atque, veniam placeat numquam molestias a dolor sapiente vitae culpa distinctio. A, recusandae.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, error! Commodi eos eius fugiat quia neque,
+            repellendus atque, veniam placeat numquam molestias a dolor sapiente vitae culpa distinctio. A, recusandae.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate rerum soluta debitis quis mollitia, quos provident aliquid vero quasi eveniet non vel, laborum sint. Praesentium perspiciatis labore vel facere, aut accusantium officia? Quisquam id, quod facere odio libero illo ut laudantium quaerat esse voluptatem voluptates rerum, quis quo aliquam non. Quia ad magni ea earum dolor voluptatum, repellendus autem esse id at? Distinctio quibusdam, vel labore officiis illum blanditiis obcaecati dignissimos maxime cumque aliquid vitae necessitatibus dolore commodi placeat? Voluptate labore distinctio pariatur velit mollitia dolor voluptatem, saepe quasi nulla molestiae exercitationem enim, repudiandae tempora at fuga quam modi in!</p>
+        <p id="abajo">
+            <span><b color="red">Esto es abajo</b></span>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, error! Commodi eos eius fugiat quia
+            neque, repellendus atque, veniam placeat numquam molestias a dolor sapiente vitae culpa distinctio. A,
+            recusandae.
+        </p>
+        <a href="#arriba" id="arriba"><button>ir arriba</button></a>
+    </main>
+</body>
+</html>
